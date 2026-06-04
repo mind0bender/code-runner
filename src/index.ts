@@ -1,6 +1,3 @@
-import Compilers, { type LANGUAGES } from "./utils/compiler";
+import Writer from "./lib/writer";
 
-for (const key of Object.keys(Compilers) as LANGUAGES[]) {
-  const isReady = await Compilers[key].isEnvironmentReady();
-  console.log(`${key}: ${isReady}`);
-}
+const fn = await Writer.writeCode("console.log('Hello, World!');", "js");
