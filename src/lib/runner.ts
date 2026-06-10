@@ -19,7 +19,7 @@ export interface RunnerOptions {
 }
 
 export class Runner {
-  static async runSubmission(
+  static async run(
     compiler: Compiler<string>,
     code: string,
     options: RunnerOptions = {},

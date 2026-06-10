@@ -1,9 +1,7 @@
-import Writer from "./lib/writer";
-import Compiler, { compilers } from "./lib/compiler";
-import Executor from "./lib/executor";
-import Runner from "./lib/runner";
-
-export { Writer, Compiler, Executor, Runner, compilers };
+export { default as Writer } from "./lib/writer";
+export { default as Compiler, compilers } from "./lib/compiler";
+export { default as Executor } from "./lib/executor";
+export { default as Runner } from "./lib/runner";
 
 // const code = `
 // console.log({username: "m0b"});
