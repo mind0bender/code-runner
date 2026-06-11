@@ -1,7 +1,12 @@
-export { default as Writer } from "./lib/writer";
-export { default as Compiler, compilers } from "./lib/compiler";
-export { default as Executor } from "./lib/executor";
-export { default as Runner } from "./lib/runner";
+export { default as Writer, type IWriter } from "./lib/writer";
+export { default as Compiler, compilers, type ICompiler, type LANGUAGES } from "./lib/compiler";
+export { default as Executor, type ExecutionOptions, type ExecutionResult } from "./lib/executor";
+export {
+  default as Runner,
+  type RunnerResult,
+  type RunnerOptions,
+  type JudgeVerdict,
+} from "./lib/runner";
 
 // const code = `
 // console.log({username: "m0b"});
